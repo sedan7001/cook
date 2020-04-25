@@ -107,7 +107,7 @@ $number = $total_record - $start;
                             <div id="ripple1">덧글</div>
                             <div id="ripple2">
                                 <?
-                                $sql = "select*from memo_ripple where parent='$memo_num'";
+                                $sql = "select * from cook_memo_ripple where parent='$memo_num'";
                                 $ripple_result = mysqli_query($conn,$sql);
                                 while ($row_ripple = mysqli_fetch_array($ripple_result)) {
                                     $ripple_num = $row_ripple[num];

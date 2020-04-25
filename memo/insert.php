@@ -33,7 +33,7 @@ if(!$content)
 $regist_day=date("Y-m-d(H:i)");
 include "../lib/dbconn.php";
 
-$sql="select*from member where id='$userid'";
+$sql="select * from cook_member where id='$userid'";
 $result=mysqli_query($conn,$sql);
 $row=mysqli_fetch_array($result);
 

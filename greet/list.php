@@ -26,11 +26,11 @@ if ($mode=="search")
 		exit;
 	}
 
-	$sql = "select * from greet where $find like '%$search%' order by num desc";
+	$sql = "select * from cook_greet where $find like '%$search%' order by num desc";
 }
 else
 {
-	$sql = "select * from greet order by num desc";
+	$sql = "select * from cook_greet order by num desc";
 }
 
 $result = mysqli_query($conn, $sql);

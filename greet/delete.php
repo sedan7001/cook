@@ -3,7 +3,7 @@ session_start();
 
 include "../lib/dbconn.php";
 
-$sql = "delete from greet where num = $num";
+$sql = "delete from cook_greet where num = $num";
 mysqli_query($conn,$sql);
 
 mysqli_close($conn);

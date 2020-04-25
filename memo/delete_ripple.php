@@ -7,7 +7,7 @@
  */
 include "../lib/dbconn.php";
 
-$sql="delete from memo_ripple where num=$num";
+$sql="delete from cook_memo_ripple where num=$num";
 mysqli_query($conn,$sql);
 mysqli_close($conn);
 

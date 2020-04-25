@@ -138,7 +138,7 @@ mysqli_query($conn,$sql);
 
 					<div id="ripple">
 						<?
-						$sql = "select * from free_ripple where parent='$item_num'";
+						$sql = "select * from cook_free_ripple where parent='$item_num'";
 						$ripple_result = mysqli_query($conn,$sql);
 
 						while ($row_ripple = mysqli_fetch_array($ripple_result))
