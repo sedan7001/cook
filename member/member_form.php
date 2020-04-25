@@ -1,11 +1,4 @@
-<?
-session_start();
-$conn=mysqli_connect('localhost','sedan','hurin0315','sedan');
-if(!$conn){
-    echo "접속실패!".mysqli_connect_error();
-}else {
-    echo "접속성공";}
-?>
+<?include "../lib/dbconn.php";?>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>

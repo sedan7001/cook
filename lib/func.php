@@ -1,7 +1,7 @@
 <?
 function latest_article($table, $loop, $char_limit)
 {
-    include "dbconn.php";
+    include "./dbconn.php";
 
     $sql = "select * from $table order by num desc limit $loop";
     $result = mysqli_query($conn, $sql );

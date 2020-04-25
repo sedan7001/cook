@@ -5,17 +5,22 @@
 
     <?
     if (!$userid) {
-        echo "<a href='./admin/admin.php'>관리자페이지</a>|";
-        echo "<a href='./login/login_form.php'>로그인</a>|";
+        echo "<a href='./admin/admin.php'>관리자페이지</a>";
+        echo "<a href='./login/login_form.php'>로그인</a>";
         echo "<a href='./member/member_form.php'>회원가입</a>";
     } else {
         if($userid=="admin"){
-            echo "<a href='./admin/admin.php'>관리자페이지</a>|";
+            echo "<a href='./admin/admin.php'>관리자페이지</a>";
         }
         echo $usernick."(level:".$userlevel.")|";
 
-        echo "<a href='./login/logout.php'>로그아웃</a>|";
+        echo "<a href='./login/logout.php'>로그아웃</a>";
         echo "<a href='./login/member_form_modify.php'>정보수정</a>";
     }
     ?>
+    <style>
+        #top_login a {
+            margin-right:5px;
+        }
+    </style>
 </div>
