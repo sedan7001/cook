@@ -6,7 +6,7 @@
 - PHP 5.6
 - MySQL 5.6.23
 - Chart.js 1.1.1
-- DataTAbles 1.10.7
+- DataTables 1.10.7
 - Bootstrap 3.3.6
 ### 세팅
 1. db세팅 후 ```lib/dbconn.php``` 설정
