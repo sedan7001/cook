@@ -138,7 +138,7 @@ mysqli_query($conn,$sql);
 					<div id="view_button">
 						<a href="list.php?table=<?=$table?>&page=<?=$page?>"><img src="../img/list.png"></a>&nbsp;
 						<?
-						if($userid==$item_id || $userid="admin" || $userlevel==1 )
+						if($userid==$item_id || $userlevel==99 )
 						{
 							?>
 							<a href="write_form.php?table=<?=$table?>&mode=modify&num=<?=$num?>&page=<?=$page?>"><img src="../img/modify.png"></a>&nbsp;

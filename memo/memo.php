@@ -94,7 +94,7 @@ $number = $total_record - $start;
                                 <li id="writer_title3"><?= $memo_date ?></li>
                                 <li id="writer_title4">
                                     <?
-                                    if ($userid == "sedan" || $userid == $memo_id) {
+                                    if ($userlevel==99 || $userid == $memo_id) {
                                         echo "<a href='delete.php?num=$memo_num'>[삭제]</a>";
                                     }
                                     ?>
@@ -125,7 +125,7 @@ $number = $total_record - $start;
 
                                                 ?></li>
                                             <li id="mdi_del">
-                                                <? if ($userid == "admin" || $userid == $ripple_id)
+                                                <? if ($userlevel==99 || $userid == $ripple_id)
                                                     echo "<a href='delete_ripple.php?num=$ripple_num'>삭제</a>"
                                                 ?>
                                             </li>

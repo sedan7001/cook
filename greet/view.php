@@ -96,7 +96,7 @@ mysqli_query($conn,$sql);
 					<div id="view_button">
 						<a href="list.php?page=<?=$page?>"><img src="../img/list.png"></a>&nbsp;
 						<?
-						if($userid==$item_id || $userlevel==1 || $userid=="admin")
+						if($userid==$item_id || $userlevel==99)
 						{
 							?>
 							<a href="modify_form.php?num=<?=$num?>&page=<?=$page?>"><img src="../img/modify.png"></a>&nbsp;

@@ -87,7 +87,7 @@ mysqli_query($conn,$sql);
 					<div id="view_button">
 						<a href="list.php?table=<?=$table?>&page=<?=$page?>"><img src="../img/list.png"></a>&nbsp;
 						<?
-						if($userid && ($userid==$item_id) )
+						if($userid && ($userid==$item_id || $userlevel==99) )
 						{
 							?>
 							<a href="write_form.php?table=<?=$table?>&mode=modify&num=<?=$num?>&page=<?=$page?>"><img src="../img/modify.png"></a>&nbsp;
