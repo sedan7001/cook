@@ -262,23 +262,19 @@ while ($arr = mysqli_fetch_array($result)) {
                         </table>
 
 
-                        <h4 class="table_h4"><img src="../img/sub_icon1.png"/><span class="table_sub">개발 환경</span></h4>
+                        <h4 class="table_h4"><img src="../img/sub_icon1.png"/><span class="table_sub">라이브러리 버전</span></h4>
                         <table id="info_table2" class="table table-bordered table-hover table-striped">
                             <tr class="sub_td">
-                                <td>jQuery</td>
-                                <td>Bootstrap</td>
-                                <td>DataTables</td>
                                 <td>Chart.js</td>
-                                <td>WordPress</td>
-                                <td>PhpStorm</td>
+                                <td>DataTables</td>
+                                <td>Bootstrap</td>
+                                <td>jQuery</td>
                             </tr>
                             <tr>
-                                <td>2.2.3</td>
-                                <td>3.3.6</td>
-                                <td>1.10.7</td>
                                 <td>1.1.1</td>
-                                <td>4.5.2</td>
-                                <td>10.0.1</td>
+                                <td>1.10.7</td>
+                                <td>3.3.6</td>
+                                <td>2.2.3</td>
                             </tr>
                         </table>
 
@@ -290,7 +286,7 @@ while ($arr = mysqli_fetch_array($result)) {
 table_name,
 round(((data_length+index_length)/1024),2) KB
 FROM information_schema.TABLES
-where table_schema = 'sedan'";
+where table_name like 'cook%'";
 
                                 $result = mysqli_query($conn, $sql);
                                 $td_cnt = 0;
