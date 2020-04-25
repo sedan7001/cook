@@ -24,7 +24,7 @@ extract($_COOKIE);
 extract($_SESSION);
 
 //db 접속에 필요한 user, password, database 를 각각 입력해 준다.
-$conn=mysqli_connect('localhost','sedan','hurin0315','sedan');
+$conn=mysqli_connect('localhost','1234','1234','1234');
 if(!$conn){
     echo "DB 접속실패!".mysqli_connect_error();
 }else {
