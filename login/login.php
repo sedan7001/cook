@@ -1,7 +1,14 @@
 <?
 session_start();
+include "../lib/dbconn.php";
 ?>
-<meta charset="UTF-8">
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="utf-8">
+
+    </head>
+</html>
 <?
 //이전 화면에서 이름이 입력되지 않았으면 "이름을 입력하세요."
     //메세지 출력
@@ -24,9 +31,8 @@ if(!$password){
     ");
     exit;
 }
-include "../lib/dbconn.php";
 
-$sql="select *from cook_member where id='$id'";
+$sql="select * from cook_member where id='$id'";
 $result=mysqli_query($conn,$sql);
 $num_match=mysqli_num_rows($result);
 
@@ -61,6 +67,8 @@ else{
         $_SESSION['username']=$username;
         $_SESSION['usernick']=$usernick;
         $_SESSION['userlevel']=$userlevel;
+        extract($_SESSION);
+
 
         echo("
         <script>

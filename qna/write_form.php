@@ -1,7 +1,8 @@
 <?
 session_start();
+include "../lib/dbconn.php";
 ?>
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!DOCTYPE html>
 <html>
 <head>
 	<link href="../css/common.css" rel="stylesheet" type="text/css" media="all">
@@ -11,7 +12,6 @@ session_start();
 <?
 if ($mode=="modify" || $mode=="response")
 {
-	include "../lib/dbconn.php";
 
 	$sql = "select * from $table where num=$num";
 	$result = mysqli_query($conn,$sql);

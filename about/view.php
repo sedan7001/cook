@@ -61,7 +61,7 @@ $new_hit = $item_hit + 1;
 $sql = "update $table set hit=$new_hit where num=$num";   // 글 조회수 증가시킴
 mysqli_query($conn,$sql);
 ?>
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!DOCTYPE html>
 <html>
 <head>
 	<meta charset="utf-8">

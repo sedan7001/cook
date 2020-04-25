@@ -5,7 +5,9 @@
  * Date: 2016-06-28
  * Time: 오전 4:32
  */
-session_start();?>
+session_start();
+include "../lib/dbconn.php";
+?>
 <meta charset="utf-8">
     <?
 if(!$userid)
@@ -31,8 +33,6 @@ if(!$content)
 }
 
 $regist_day=date("Y-m-d(H:i)");
-include "../lib/dbconn.php";
-
 $sql="select * from cook_member where id='$userid'";
 $result=mysqli_query($conn,$sql);
 $row=mysqli_fetch_array($result);

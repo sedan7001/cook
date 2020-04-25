@@ -1,11 +1,6 @@
-<?php
-/**
- * Created by PhpStorm.
- * User: sedan
- * Date: 2016-06-28
- * Time: 오후 9:42
- */
+<?
 session_start();
+include "../lib/dbconn.php";
 ?>
 <meta charset="utf-8">
 <?
@@ -28,8 +23,6 @@ if(!ripple_content){
     ");
     exit;
 }
-
-include "../lib/dbconn.php";
 
 $sql="select * from cook_member where id='$userid'";
 $result=mysqli_query($conn,$sql);

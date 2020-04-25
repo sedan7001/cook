@@ -1,4 +1,7 @@
-<? session_start(); ?>
+<?
+session_start();
+include "../lib/dbconn.php";
+?>
 <meta charset="utf-8">
 <?
 if(!$userid) {

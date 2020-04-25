@@ -1,7 +1,7 @@
 <?
 session_start();
 ?>
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!DOCTYPE html>
 <html>
 <head>
 	<meta charset="utf-8">
@@ -71,7 +71,7 @@ session_start();
 								<div id="login_line"></div>
 								<div id="join_button">
 									<img src="../img/no_join.gif">&nbsp;&nbsp;&nbsp;&nbsp;
-									<a href="../member/member_form.php"><img src="../img/join_button.gif"</a>
+									<a href="../member/member_form.php"><img src="../img/join_button.gif"></a>
 								</div>
 							</div>
 						</div>

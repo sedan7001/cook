@@ -1,5 +1,6 @@
 <?
 session_start();
+include "../lib/dbconn.php";
 ?>
 <meta charset="utf-8">
 <?

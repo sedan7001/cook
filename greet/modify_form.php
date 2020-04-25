@@ -9,7 +9,7 @@ $row = mysqli_fetch_array($result);
 $item_subject     = $row[subject];
 $item_content     = $row[content];
 ?>
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!DOCTYPE html>
 <html>
 <head>
 	<meta charset="utf-8">

@@ -62,7 +62,7 @@ $sub4 = $row["sub4"];
 
 
 ?>
-<doctype="html">
+<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8">

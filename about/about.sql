@@ -1,4 +1,4 @@
-create table cook_concert (
+create table cook_about (
    num int not null auto_increment,
    id char(15) not null,
    name  char(10) not null,
